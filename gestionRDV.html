@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Grdv.css">
+    <title>Gestion RDV</title>
+</head>
+<body>
+
+    <header>
+        <center>
+            <h1>GESTION RDV</h1>   
+        </center>
+        
+       
+        <nav>
+            <a href="index.html">Retour à la page d'Accueil</a>
+            <!-- Ajoutez d'autres liens de menu ici si nécessaire -->
+        </nav>
+    </header>
+    
+  
+    <table class="form-table">
+       
+        <form action="InscriptionDB.php" method="post">
+        <section class="grid-container">
+        <form class="grid-item" id="crétion compte">
+        <label for="nom">Nom d'utilisateur:</label><br>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="mot_de_passe">Mot de passe:</label><br>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+        <input type="submit" value="S'inscrire">
+            </form>
+    </table>
+
+ 
+    <table class="form-table">
+        <form action="loginDB.php" method="post">
+            <section class="grid-container">
+            <form class="grid-item" id="Se connecter">
+                    <label for="nom_login">Nom d'utilisateur:</label><br>
+                    <input type="text" id="nom_login" name="nom_login" required><br>
+                    <label for="mot_de_passe_login">Mot de passe:</label><br>
+                    <input type="password" id="mot_de_passe_login" name="mot_de_passe_login" required><br><br>
+                    <input type="submit" value="Se connecter">
+            
+            </form>
+
+        </section>
+
+
+            
+
+    </table>
+
+</body>
+</html>
+</section>
+
+
+    <footer>
+        
+        <p class="copyright">© 2024 Médipro. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

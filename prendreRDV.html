@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Prdv.css">
+    <title>RDV</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Désactiver les jours antérieurs dans le calendrier
+            var today = new Date().toISOString().split('T')[0];
+            $("#date").attr("min", today);
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <center>
+            <h1>PRENDRE RDV</h1>   
+        </center>
+        <nav>
+            <a href="index.html">Retour à la page d'Accueil</a>
+            <!-- Ajoutez d'autres liens de menu ici si nécessaire -->
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Prise de Rendez-vous</h2>
+        <form action="formulaireRDV.php" method="post">
+            <label for="genre">Genre :</label>
+            <select name="genre" required>
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+            </select>
+
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" required>
+
+            <label for="etat_civil">État civil :</label>
+            <select name="etat_civil" required>
+                <option value="celibataire">Célibataire</option>
+                <option value="marie">Marié(e)</option>
+                <option value="divorce">Divorcé(e)</option>
+                <option value="veuf">Veuf/Veuve</option>
+            </select>
+
+            <label for="date">Date du rendez-vous :</label>
+            <input type="date" name="date" required>
+
+            <label for="heure">Heure du rendez-vous :</label>
+            <input type="time" name="heure" required>
+
+            <label for="medecin">Choix du médecin :</label>
+            <select name="medecin" required>
+                <option value="Dr. CAMARA">Dr. CAMARA</option>
+                <option value="Dr. TCHAPDIEU">Dr. TCHAPDIEU</option>
+                <option value="Dr. TUMBA">Dr. TUMBA</option>
+                <!-- Ajoutez d'autres options pour les médecins si nécessaire -->
+            </select>
+
+            <label for="motif">Motif du rendez-vous :</label>
+            <select name="motif" required>
+                <option value="consultation">Consultation médicale</option>
+                <option value="suivi">Suivi de traitement</option>
+                <option value="vaccination">Vaccination</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <input type="submit" value="Prendre rendez-vous">
+        </form>
+    </div>
+        </form>
+    </div>
+
+    
+
+   
+
+    <footer>
+        
+        <p class="copyright">© 2024 Médipro. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

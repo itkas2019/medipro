@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px; /* Ajouter une marge interne au corps pour éviter tout problème d'espacement */
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #063862;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #063862;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ... (le reste du code reste inchangé) */
+form input,
+form textarea {
+    width: 20%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 20px; /* Ajuster la taille de la police */
+}
+button#btnDeconnexion {
+    background-color: #ff0000; /* Nouvelle couleur (rouge dans cet exemple) */
+    color: #ffffff; /* Blanc */
+    border: none;
+    box-sizing: 20px;
+}
+
+/* Style pour les autres boutons */
+button:not(#btnDeconnexion) {
+    background-color: #0b4be0; /* Couleur d'origine pour les autres boutons (vert dans cet exemple) */
+    color: #ffffff; /* Blanc */
+    border: none;
+}

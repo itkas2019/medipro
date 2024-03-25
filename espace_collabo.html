@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace colaborateur - Gestion des Rendez-vous</title>
+    
+    <link rel="stylesheet" href="espace_collabo.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <section id="deconnexion">
+        <button id="btnDeconnexion" onclick="deconnexion()">Déconnexion</button>
+    <h1>Espace Collaborateur - Gestion des Rendez-vous</h1>
+    </section>
+    
+    <section>
+        
+        <a href="select.php" class="button"><button type="submit">Afficher Rendez-vous</button></a>
+        
+     </form>
+     <!-- Update Form -->
+       <form action="update.php" method="POST">
+        <label for="id">Mise à jour ID:</label>
+        <input type="text" name="id" required>
+        <label for="date">Date du rendez-vous :</label>
+        <input type="date" name="date" required>
+
+        <label for="heure">Heure du rendez-vous :</label>
+        <input type="time" name="heure" required>
+
+        <button type="submit">Modifier Rendez-vous</button>
+    </form>
+        
+    </section>
+
+    
+    <footer>
+        <p>© 2024 Espace Client. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function modifierRendezVous() {
+            alert("Fonction de modification non implémentée.");
+        }
+
+        function annulerRendezVous() {
+            alert("Fonction d'annulation non implémentée.");
+        }
+
+        function afficherRendezVous() {
+            alert("Fonction d'affichage non implémentée.");
+        }
+        
+        function deconnexion() {
+            alert("Vous êtes déconnecté.");
+            // Redirection vers la page d'accueil
+            window.location.href = 'gestionRDV.html';
+        }
+        
+    </script>
+</body>
+</html>
